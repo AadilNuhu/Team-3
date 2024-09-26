@@ -1,0 +1,20 @@
+function login() {
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
+    const storedUser = localStorage.getItem(username);
+    const messageDiv = document.getElementById('message');
+
+    if (storedUser) {
+        const user = JSON.parse(storedUser);
+        if (user.password === password) {
+            alert('Login successful!');
+            messageDiv.textContent = '';
+            // Redirect to a dashboard or another page
+            window.location.href = '../modules/home/index.html';
+        } else {
+            messageDiv.textContent = 'Incorrect password.';
+        }
+    } else {
+        messageDiv.textContent = 'User not found. Please sign up.';
+    }
+}
