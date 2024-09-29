@@ -22,6 +22,6 @@ function signup() {
     localStorage.setItem(username, JSON.stringify(user));
     alert('Signup successful! You can now login.');
     messageDiv.textContent = '';
-    // Optionally, redirect to the login page
+    // Takes you to the login page
     window.location.href = 'login.html';
 }
