@@ -13,8 +13,10 @@ function login() {
             window.location.href = '../modules/index.html';
         } else {
             messageDiv.textContent = 'Incorrect password.';
+            alert('Incorrect password.')
         }
     } else {
         messageDiv.textContent = 'User not found. Please sign up.';
+        alert('User Not Found. Please Sign Up')
     }
 }
