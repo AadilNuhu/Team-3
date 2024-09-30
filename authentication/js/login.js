@@ -9,12 +9,14 @@ function login() {
         if (user.password === password) {
             alert('Login successful!');
             messageDiv.textContent = '';
-            // Redirect to a dashboard or another page
-            window.location.href = '../modules/home/index.html';
+            // Takes you to the dashboard
+            window.location.href = '../modules/index.html';
         } else {
             messageDiv.textContent = 'Incorrect password.';
+            alert('Incorrect password.')
         }
     } else {
         messageDiv.textContent = 'User not found. Please sign up.';
+        alert('User Not Found. Please Sign Up')
     }
 }
