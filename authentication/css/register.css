@@ -89,5 +89,5 @@ button:hover {
     margin-bottom: 15px;
     color: red;
     font-size: 14px;
-    visibility: hidden; /* This will be made visible through JS */
+    visibility: hidden; 
 }

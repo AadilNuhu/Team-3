@@ -18,7 +18,7 @@ body{
   justify-content: space-between;
   align-self: center;
   row-gap: 20px;
-  height:80px;
+  height:140px;
   right: 0;
   left: 0;
   min-width:720px;
@@ -30,6 +30,18 @@ body{
 
 }
 
+.support{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
 .left-section{
   margin:10px 10px 10px 50px;
   border-radius: 2px;
@@ -37,8 +49,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
   background-color: #8241c44f;
   backdrop-filter: blur (4px);
   
