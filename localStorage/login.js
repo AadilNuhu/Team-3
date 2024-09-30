@@ -10,7 +10,7 @@ function login() {
             alert('Login successful!');
             messageDiv.textContent = '';
             // Redirect to a dashboard or another page
-            window.location.href = '../modules/home/index.html';
+            window.location.href = '../modules/index.html';
         } else {
             messageDiv.textContent = 'Incorrect password.';
         }
