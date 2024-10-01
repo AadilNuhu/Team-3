@@ -156,27 +156,46 @@
             </div>     
 
                 <!-- ============ User modules ============-->
+                <div class="addPerson">
+                    <input type="text" id="nameInput" placeholder="Enter name" />
+                    <input type="text" id="jobTitleInput" placeholder="Enter job title" />
+                    <input type="file" id="imageInput" accept="image/*" />
+                    <button onclick="addPerson()">Add Person</button>
+                </div>
     <div class="user-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Job Title</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="personTableBody">
+                <!-- Items will be rendered here -->
+            </tbody>
+        </table>
                 <!-- User 1 -->
-                <div class="user-card">
+                <!-- <div class="user-card">
                     <img src="imgs/hard-work.png" alt="User 1 Photo">
                     <h3>John Kelvin</h3>
                     <p>Web Developer</p>
                 </div>
         
-                <!-- User 2 -->
+                User 2
                 <div class="user-card">
                     <img src="imgs/working (1).png" alt="User 2 Photo">
                     <h3>Aadil</h3>
                     <p>Web Developer</p>
                 </div>
         
-                <!-- User 3 -->
-                <div class="user-card">
+                User 3 -->
+                <!-- <div class="user-card">
                     <img src="imgs/working.png" alt="User 3 Photo">
                     <h3>Blessing</h3>
                     <p>Web Developer</p>
-                </div>        
+                </div>         -->
     </div>
 
     
@@ -184,8 +203,9 @@
 </body>
     <!-- =========== Scripts =========  -->
     <script src="javascript/main.js"></script>
+    <script src="javascript/script.js"></script>
 
- <!-- ====== ion icons ======= -->
- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- ====== ion icons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
