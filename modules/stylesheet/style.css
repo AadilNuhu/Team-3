@@ -223,22 +223,37 @@ iframe{
   font-size: 1.2rem;
 }
 
-.user {
-  position: relative;
+/*==================== table ============  */
+table {
+  width: 97%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+}
+input[type="file"] {
+  padding: 5px;
+}
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-.user img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -455,6 +470,53 @@ iframe{
 }
 .recentCustomers table tr:hover td h4 span {
   color: var(--white);
+}
+
+.addPerson {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.addPerson input[type="text"], .addPerson input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.addPerson input[type="text"]:focus, .addPerson input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.addPerson button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.addPerson button:hover {
+  background-color: #0056b3;
+}
+
+.addPerson input[type="file"] {
+  cursor: pointer;
 }
 
 /* ====================== Responsive Design ========================== */
